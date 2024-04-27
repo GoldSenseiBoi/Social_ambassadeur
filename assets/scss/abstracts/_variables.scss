@@ -1,0 +1,71 @@
+// (1.02) variables
+
+// inter, poppins and montserrat google font source
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&display=swap'), url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'), url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  // font family
+  --inter: "Inter", sans-serif;
+  --mont: "Montserrat", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  --bebas: "Bebas Neue", sans-serif;
+  --barlow: "Barlow Condensed", sans-serif;
+
+  // theme default
+  --theme-font: var(--inter);
+  --theme-bg: #030015;
+  --theme-color: #ffffff90;
+
+  // colors
+  --white: #ffffff;
+  --black: #0c0b27;
+  --primary-color: #f4177f;
+  --secondary-color: #7367f0;
+  --tertiary-color: #0c0b27;
+  --quaternary-color: #332578;
+  --quinary-color: rgb(255 255 255 / 80%);
+
+  // transitions
+  --transition: all 0.3s ease-in-out;
+
+  // box shadow
+  --shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  --shadow-secondary: 0 0 31px rgba(0, 0, 0, 0.1);
+}
+
+.t-rose{
+  color: var(--primary-color) !important;
+}
+.t-violet{
+  color: var(--secondary-color) !important;
+}
+
+.d-degrade{
+  background: linear-gradient(35deg, #0c0b27 40%, #230b36 100%) fixed;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.label{
+  p{
+    font-size: 15px;
+    line-height: 20px;
+    background: rgb(255, 255, 255, 0.02);
+    padding: 10px 20px;
+    border-radius: 35px;
+    display: inline-block;
+    color: #fef0ff !important;
+  }
+}
